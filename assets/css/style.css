@@ -1,0 +1,64 @@
+*,
+*:after,
+*:before {
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Inter', sans-serif;
+   font-size: 14px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+   margin: 0;
+}
+
+/* Container */
+.container {
+   width: 100%;
+   max-width: 1294px;
+   margin: 0 auto;
+}
+
+/* Header */
+.header {
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+}
+
+.header__inner{
+   display: flex;
+   height: 80px;
+   justify-content: space-between;
+   align-items: center;
+}
+
+/* Nav */ 
+
+.nav {
+   display: flex;
+   column-gap: 45px;
+}
+
+.nav a {
+   text-decoration: none;
+   color: black;
+}
+
+.interactive {
+   display: flex;
+   column-gap: 22px;
+}
+
+.interactive button {  
+   cursor: pointer;
+   border: none;
+   background: none;
+}
+
+.interactive button img {
+   width: 24px;
+   height: 24px;
+}
