@@ -284,6 +284,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .best-around-item {
+   padding-top: 41pxfo;
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -467,6 +468,43 @@ h1, h2, h3, h4, h5, h6 {
 
 /*Footer*/
 
+footer{
+   background-color: #F8F9FA;
+   margin-top: 19px;
+}
 
+.footer {
+   padding-top: 45px;
+   display: flex;
+   column-gap: 32px;
+   justify-content: space-between;
+   padding-bottom: 78px;
+}
+
+.footer-descriprtion{
+   width: 394px;
+}
+.footer-descriprtion p {
+   max-width: 304px;
+   margin: 0;
+   margin-top: 18px;
+}
+
+.footer-item {
+   display: flex;
+   flex-direction: column;
+   row-gap: 14px;
+}
+
+.footer-item h2 {
+   font-size: 22px;
+   margin-bottom: 19px;
+}
+
+.footer-item a {
+   font-size: 17px; 
+   text-decoration: none;
+   color: #000;
+}
 
 
