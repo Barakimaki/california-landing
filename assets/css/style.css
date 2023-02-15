@@ -20,9 +20,22 @@ h1, h2, h3, h4, h5, h6 {
    margin: 0 auto;
 }
 
+.container h2 {
+   font-family: 'Readex Pro';
+   font-weight: 400;
+   font-size: 42px;
+}
+
+.container p {
+   font-family: 'Readex Pro';
+   font-size: 14px;
+   margin: 0 auto;
+   max-width: 628px;
+   margin-top: 9px;
+}
+
 /* Header */
 .header {
-   position: absolute;
    top: 0;
    left: 0;
    right: 0;
@@ -62,3 +75,398 @@ h1, h2, h3, h4, h5, h6 {
    width: 24px;
    height: 24px;
 }
+
+/* Banner */
+
+.banner {
+   background: #DCE5E2;
+   border-radius: 32px;
+   height: 550px;
+   background-image: url(../images/banner.png);
+   background-repeat: no-repeat;
+   background-position: right;
+}
+
+.banner h2 {
+   padding-left: 56px;
+   padding-top: 145px;
+   font-family: 'Readex Pro', sans-serif;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 58px;
+   line-height: 70px;
+   width: 620px;
+}
+
+.banner p {
+   padding-left: 56px;
+   width: 565px;
+   font-size: 16px;
+   margin: 0;
+   margin-top: 19px;
+}
+
+.banner button{
+   cursor: pointer;
+   font-size: 18px;
+   margin-top: 30px;
+   margin-left: 56px;
+   background: none;
+   width: 170px;
+   height: 50px;
+   border: 1px solid #000000;
+   border-radius: 200px;
+}
+
+/* Latest */
+
+.latest {
+   margin-top: 75px;
+   text-align: center;
+}
+
+
+.latest .grid {
+   display: grid;
+   gap: 16px;
+   grid-template-areas: 
+   "laptop phones tablet"
+   "watch phones tablet"
+   ;
+   padding-top: 56px;
+}
+
+.latest .grid .shopdir {
+   border: none;
+   border-radius: 32px;
+   box-shadow: 0px 4px 35px rgba(0, 0, 0, 0.25);
+}
+
+.latest .grid .shopdir .desc h4{
+   align-items: center;
+   font-size: 15px;
+   font-weight: normal;
+}
+
+.latest .grid .shopdir .desc h3{
+   font-family: 'Readex Pro', sans-serif;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 32px;
+}
+
+.latest .grid .laptop {
+   width: 639px;
+   height: 472px;
+   grid-area: laptop;
+
+   background-image: url(../images/laptopbg.png);
+   background-repeat: no-repeat;
+   background-position: top 0 left 42px;
+}
+
+.latest .grid .laptop .desc {
+   margin-left: 42px;
+   margin-right: 42px;
+   margin-top: 377px;
+   text-align: right;
+}
+
+.latest .grid .laptop .desc h3{
+   width: 192px;
+   float: right;
+   
+}
+
+.latest .grid .watch {
+   width: 639px;
+   height: 270px;
+   grid-area: watch;
+   background-image: url(../images/watchbg.png);
+   background-repeat: no-repeat;
+   background-position: top 0 left 42px;
+}
+
+.latest .grid .watch .desc {
+   margin-left: 442px;
+   margin-right: 42px;
+   margin-top: 87px;
+   text-align: right;
+}
+
+.latest .grid .phones {
+   width: 312px;
+   grid-area: phones;
+   border: none;
+   background-image: url(../images/phonebg.png);
+   background-repeat: no-repeat;
+   background-position: top 144px left 16px;
+}
+
+.latest .grid .phones .desc {
+   margin-top: 553px;
+   margin-left: 31px;
+   margin-right: 31px;
+   text-align: center;
+}
+
+.latest .grid .tablet {
+   width: 312px;
+   grid-area: tablet;
+   background-image: url(../images/tabletbg.png);
+   background-repeat: no-repeat;
+   background-position: top 252px left 0;
+}
+
+.latest .grid .tablet .desc {
+   margin-top: 133px;
+   margin-left: 40px;
+   margin-right: 40px;
+   text-align: center;
+}
+
+/* Most Selled */
+
+.most-selled {
+   margin-top: 75px;
+   text-align: center;
+}
+
+.most-selled .products{
+   display: flex;
+   justify-content: space-between;
+   margin-top: 31px;
+}
+
+.most-selled .products .product{
+   display: flex;
+   flex-direction: column;
+   row-gap: 8px;
+   width: 302px;
+   text-align: left;
+}
+
+.most-selled .products .product .product-img{
+   height: 270px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.most-selled .products .product h3{
+   font-family: 'Readex Pro', sans-serif;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 22px;
+}
+
+.most-selled .products .product p {
+   font-family: 'Inter', sans-serif;
+   font-size: 14px;
+   color: #4B4B4B;
+}
+
+.most-selled .products .product h4{
+   font-size: 18px;
+}
+
+/* best */
+
+.best-around {
+   margin-top: 75px;
+   text-align: center;
+}
+
+.best-around-items {
+   display: flex;
+   justify-content: center;
+   column-gap: 28px;
+   margin-top: 56px;
+}
+
+.best-around-item {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background: #F8F9FA;
+   border-radius: 16px;
+   width: 413px;
+}
+
+.best-around-item h4 {
+   font-family: 'Readex Pro', sans-serif;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 13px;
+}
+.best-around-item h3 {
+   font-family: 'Readex Pro', sans-serif;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 28px;
+}
+
+.best-around-item button {
+   cursor: pointer;
+   margin-top: 30px;
+   width: 190px;
+   height: 50px;
+   border: 1px solid #000;
+   border-radius: 200px;
+   font-size: 18px;
+   background: none;
+}
+
+.best-around-item img {
+   margin-top: 30px;
+}
+
+/* Ideas */
+
+.ideas{
+   margin-top: 75px;
+   text-align: center;
+}
+.ideas-content {
+   margin-top: 56px;
+   display: flex;
+   column-gap: 35px;
+}
+.ideas-content img {
+   border-radius: 16px;
+}
+.idea {
+   max-width: 600px;
+   text-align: left;
+   display: flex;
+   flex-direction: column;
+   row-gap: 28px;
+}
+.idea p {
+   font-family: 'Inter', sans-serif;
+   font-size: 24px;
+   margin-left: 0;
+}
+.see-all{
+   margin-top: 75px;
+}
+.see-all a {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 24px;
+   text-decoration: none;
+   color: #000;
+}
+
+/* search bar */ 
+
+.search-bar {
+   margin-top: 75px;
+   text-align: center;
+}
+.search {
+   margin-top: 24px;
+   display: inline-flex;
+   border: 1px solid #C5C5C5;
+   border-radius: 100px; 
+   padding: 15px;
+   background: #F8F9FA;
+   width: 650px;
+   height: 60px;
+}
+
+.search-icon {
+   width: 30px;
+   height: 30px;
+   margin-right: 20px;
+   
+   order: -1;
+}
+
+.search-field {
+   border: 0;
+   background: none;
+}
+
+.search-field::placeholder{
+   color: #000;
+   font-size: 14px;
+   font-family: 'Inter', sans-serif;
+}
+
+.search-field:focus{
+   outline: none;
+}
+
+.keywords {
+   margin: auto;
+   margin-top: 18px;
+   display: flex;
+   justify-content: center;
+   gap: 7px;
+   flex-wrap: wrap;
+   max-width: 660px;
+}
+.keyword {
+   display: flex;
+   align-items: center;
+   height: 42px;
+   padding-left: 22px;
+   padding-right: 22px;
+   border: 1px solid #C5C5C5;
+   border-radius: 200px;
+   font-size: 14px;
+}
+
+/* subscribe */
+
+.subscribe {
+   margin: auto;
+   margin-top: 75px;
+   padding-top: 47px;
+   padding-bottom: 43px;
+   text-align: center;
+   width: 935px;
+   background: #DCE5E2;
+   border-radius: 16px;
+}
+
+.subscribe img {
+   margin-top: 14px;
+   width: 233px;
+}
+
+.subscriber {
+   margin: auto;
+   margin-top: 14px;
+   width: 400px;
+   height: 50px;
+   display: flex;
+}
+
+.subscriber input {
+   width: 285px;
+   border-radius: 54px 0 0 54px;
+   border: 1px solid black;
+   background: none;
+   padding-left: 32px;
+}
+.subscriber input:focus{
+   border: none;
+}
+
+.subscriber button{
+   cursor: pointer;
+   width: 115px;
+   border: 1px solid black;
+   border-radius: 0 54px 54px 0;
+   color: #fff;
+   background: #000;
+}
+
+
+/*Footer*/
+
+
+
+
